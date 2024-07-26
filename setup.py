@@ -11,25 +11,25 @@ from pathlib import Path
 
 from setuptools import setup
 
-NAME = 'denoiser'
+NAME = 'denoiser-compat'
 DESCRIPTION = (
     'Speech enhancement in the waveform domain.'
     ' Supports offline and streaming evaluation.'
     ' Implementation for https://arxiv.org/abs/2006.12847.'
     ' For training, please directly clone the github repository.')
 
-URL = 'https://github.com/facebookresearch/denoiser'
-EMAIL = 'alexandre.defossez@gmail.com'
-AUTHOR = 'Alexandre Défossez'
+URL = 'https://github.com/lizaibeim/denoiser'
+EMAIL = 'lizaibeim@gmail.com'
+AUTHOR = 'Zaibei Li'
 REQUIRES_PYTHON = '>=3.7.0'
-VERSION = "0.1.5"
+VERSION = "0.1.5-dev"
 
 HERE = Path(__file__).parent
 
 REQUIRED = [
     'julius',
-    'hydra_core<1.0',
-    'hydra_colorlog<1.0',
+    'hydra_core>=1.0',
+    'hydra_colorlog>=1.0',
     'numpy>=1.19',
     'pystoi>=0.3.3',
     'six',
